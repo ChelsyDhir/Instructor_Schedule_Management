@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Insert Data Into a Database</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        background-image: url("image/pic1.png");
+        background-repeat: no-repeat;
+        background-size: 101% 232%;
+      }
+      </style>
+  </head>
+  <body>
+    <form method="post" action="php/insertIntoValues.php">
+      <fieldset>
+        <legend>Enter the information of the instructor:</legend>
+
+        <label>Instructor ID </label><input type="number" name="insId" /> <br />
+        <label>Instructor Name</label><input type="text" name="instname" /> <br />
+        <label>Title</label>
+        <select name="title">
+            <option>Professor</option>
+            <option>Associate Professor</option>
+            <option>Research Professor</option>
+            <option>NULL</option>
+          </select> <br />
+        <label>email_address</label><input type="email" name="email" /><br />
+        <label>office_phone</label><input type="number" name="officephn" /> <br />
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br />
+    <a href="index.html">Back to the homepage</a>
+  </body>
+</html>

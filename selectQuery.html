@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Update a Record in a Table</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        background-image: url("image/pic1.png");
+        background-repeat: no-repeat;
+        background-size: 101% 161%;
+      }
+      </style>
+  </head>
+  <body>
+    <form method="post" action="php/selectAllQuery.php">
+      <fieldset>
+        <legend>Display information of all Instructors</legend>
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br />
+    <br />
+    <form method="post" action="php/selectLikeQuery.php">
+      <fieldset>
+        <legend>Display all Instructors with a Specific Title</legend>
+        <label>Title</label>
+        <input type="text" name="title" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <br />
+    <br />
+    <form method="post" action="php/selectWhereQuery.php">
+      <fieldset>
+        <legend>Display an Instructor's email address using InstructorID</legend>
+        <label>Enter Instructor ID</label> <input type="number" name="instid" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <br />
+    <br />
+    <form method="post" action="php/selectCountQuery.php">
+      <fieldset>
+        <legend>Display the number of Instructors with the particular titles</legend>
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <a href='index.html'>Back to the Homepage</a>
+  </body>
+</html>
